@@ -69,6 +69,7 @@
               <configuration>
                 <destFile>${jacoco.execution.file}</destFile>
                 <dataFile>${jacoco.execution.file}</dataFile>
+                <outputDirectory>${project.build.directory}/coverage-reports/jacoco</outputDirectory>
               </configuration>
               <executions>
                 <execution>
