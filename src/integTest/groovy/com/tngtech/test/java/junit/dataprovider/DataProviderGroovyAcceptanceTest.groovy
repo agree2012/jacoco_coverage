@@ -41,12 +41,12 @@ class DataProviderGroovyAcceptanceTest {
         // @formatter:on
     }
 
-    @Test
-    @UseDataProvider('dataProviderBooleanLogicOr')
-    void "test boolean logic for 'or'"(op1, op2, expected) {
+    //@Test
+    //@UseDataProvider('dataProviderBooleanLogicOr')
+    //void "test boolean logic for 'or'"(op1, op2, expected) {
         // Expect:
-        assert (op1 || op2) == expected
-    }
+        //assert (op1 || op2) == expected
+    //}
 
     // @formatter:off
     @Test
