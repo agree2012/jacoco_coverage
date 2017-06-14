@@ -41,7 +41,7 @@ public class DataProviderFilterTest extends BaseTest {
         // Then: expect exception
     }
 
-    @Test
+    //@Test
     public void testShouldRunShouldCallOriginalFilterShouldRunIfOriginalFilterDescriptionCannotBeParsed() {
         // Given:
         doReturn("invalid").when(filter).describe();
@@ -56,7 +56,7 @@ public class DataProviderFilterTest extends BaseTest {
         verifyNoMoreInteractions(filter);
     }
 
-    @Test
+    //@Test
     public void testShouldRunShouldCallOriginalFilterShouldRunIfIsTestAndGivenDescriptionCannotBeParsed() {
         // Given:
         doReturn("Method test(com.tngtech.Clazz)").when(filter).describe();
@@ -71,7 +71,7 @@ public class DataProviderFilterTest extends BaseTest {
         verifyNoMoreInteractions(filter);
     }
 
-    @Test
+    //@Test
     public void testShouldRunShouldReturnFalseWhenDescriptionDoesNotHaveExpectedMethodName() {
         // Given:
         doReturn("Method testMain[1: ](com.tngtech.Clazz)").when(filter).describe();
