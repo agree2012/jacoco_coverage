@@ -21,18 +21,6 @@ public class TestGenerator {
         this.dataConverter = checkNotNull(dataConverter, "dataConverter must not be null");
     }
 
-    /**
-     * Generates the exploded list of test methods for the given {@code testMethod}. The given {@link FrameworkMethod}
-     * is checked if it uses the given dataprovider method, an {@code @}{@link DataProvider}, or nothing. If it uses any
-     * dataprovider, for each line of the {@link DataProvider}s result a specific, parameterized test method will be
-     * added. If not, the original test method is added. If the given test method is {@code null}, an empty list is
-     * returned.
-     *
-     * @param testMethod the original test method
-     * @param dataProviderMethod the corresponding dataprovider method or {@code null}
-     * @return the exploded list of test methods or an empty list (never {@code null})
-     * @throws Error if something went wrong while exploding test methods
-     */
     public List<FrameworkMethod> generateExplodedTestMethodsFor(FrameworkMethod testMethod,
             FrameworkMethod dataProviderMethod) {
 
@@ -61,16 +49,7 @@ public class TestGenerator {
         return Arrays.asList(testMethod);
     }
 
-    /**
-     * Creates a list of test methods out of an existing test method and its dataprovider method.
-     * <p>
-     * This method is package private (= visible) for testing.
-     * </p>
-     *
-     * @param testMethod the original test method
-     * @param dataProviderMethod the dataprovider method that gives the parameters
-     * @return a list of methods, each method bound to a parameter combination returned by the dataprovider
-     */
+    
     List<FrameworkMethod> explodeTestMethod(FrameworkMethod testMethod, FrameworkMethod dataProviderMethod) {
         Object data;
         try {
@@ -88,16 +67,6 @@ public class TestGenerator {
         return explodeTestMethod(testMethod, data, dataProviderMethod.getAnnotation(DataProvider.class));
     }
 
-    /**
-     * Creates a list of test methods out of an existing test method and its {@link DataProvider#value()} arguments.
-     * <p>
-     * This method is package private (= visible) for testing.
-     * </p>
-     *
-     * @param testMethod the original test method
-     * @param dataProvider the {@link DataProvider} gives the parameters
-     * @return a list of methods, each method bound to a parameter combination returned by the {@link DataProvider}
-     */
     List<FrameworkMethod> explodeTestMethod(FrameworkMethod testMethod, DataProvider dataProvider) {
         return explodeTestMethod(testMethod, dataProvider.value(), dataProvider);
     }
