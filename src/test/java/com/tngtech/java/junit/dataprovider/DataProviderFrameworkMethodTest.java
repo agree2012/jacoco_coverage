@@ -90,7 +90,7 @@ public class DataProviderFrameworkMethodTest extends BaseTest {
     
     @Test
     public void testsumm(){
-        assertThat(summ(2)).isEqualTo(4);
+        assertThat(undertest.summ(2)).isEqualTo(4);
     }
 
     @Test
