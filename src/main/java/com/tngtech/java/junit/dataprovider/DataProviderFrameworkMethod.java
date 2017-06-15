@@ -10,7 +10,7 @@ import org.junit.runners.model.FrameworkMethod;
 
 import com.tngtech.java.junit.dataprovider.internal.placeholder.BasePlaceholder;
 
-/*
+
 public class DataProviderFrameworkMethod extends FrameworkMethod {
 
     final int idx;
@@ -84,4 +84,4 @@ public class DataProviderFrameworkMethod extends FrameworkMethod {
         return true;
     }
 }
-*/
+
