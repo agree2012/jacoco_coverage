@@ -87,6 +87,11 @@ public class DataProviderFrameworkMethodTest extends BaseTest {
         assertThat(underTest.parameters).isEqualTo(parameters);
         assertThat(underTest.nameFormat).isEqualTo(nameFormat);
     }
+    
+    @Test
+    public void testsumm(){
+        assertThat(summ(2)).isEqualTo(4);
+    }
 
     @Test
     public void testGetNameShouldCallPlaceholderSetContextAndProcess() {
