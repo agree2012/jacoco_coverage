@@ -10,43 +10,13 @@ import org.junit.runners.model.FrameworkMethod;
 
 import com.tngtech.java.junit.dataprovider.internal.placeholder.BasePlaceholder;
 
-/**
- * A special framework method that allows the usage of parameters for the test method.
- */
+
 public class DataProviderFrameworkMethod extends FrameworkMethod {
 
-    /**
-     * Index of exploded test method such that each get a unique name.
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     final int idx;
-
-    /**
-     * Parameters to invoke the test method.
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     final Object[] parameters;
-
-    /**
-     * Format of test method name.
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     final String nameFormat;
 
-    /**
-     * Create a {@link FrameworkMethod} extended with special attributes for using this test with a dataprovider.
-     *
-     * @param method test method for which the {@link FrameworkMethod} is created
-     * @param idx the index (row) of the used dataprovider
-     * @param parameters used for invoking this test method
-     * @param nameFormat defines the format of the test method name according to {@code @}{@link DataProvider#format()}
-     */
     public DataProviderFrameworkMethod(Method method, int idx, Object[] parameters, String nameFormat) {
         super(method);
 
@@ -114,3 +84,4 @@ public class DataProviderFrameworkMethod extends FrameworkMethod {
         return true;
     }
 }
+
