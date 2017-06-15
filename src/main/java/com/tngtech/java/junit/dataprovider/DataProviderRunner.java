@@ -25,7 +25,7 @@ import com.tngtech.java.junit.dataprovider.internal.DataConverter;
 import com.tngtech.java.junit.dataprovider.internal.DefaultDataProviderMethodResolver;
 import com.tngtech.java.junit.dataprovider.internal.TestGenerator;
 import com.tngtech.java.junit.dataprovider.internal.TestValidator;
-/*
+
 public class DataProviderRunner extends BlockJUnit4ClassRunner {
 
     protected DataConverter dataConverter;
@@ -203,4 +203,3 @@ public class DataProviderRunner extends BlockJUnit4ClassRunner {
         }
     }
 }
-*/
