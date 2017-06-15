@@ -12,7 +12,7 @@ import org.junit.runners.model.FrameworkMethod;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderFrameworkMethod;
-/*
+
 public class TestGenerator {
 
     private final DataConverter dataConverter;
@@ -87,4 +87,3 @@ public class TestGenerator {
         return result;
     }
 }
-*/
