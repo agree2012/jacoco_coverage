@@ -28,10 +28,10 @@ public class DataProviderFrameworkMethod extends FrameworkMethod {
         this.parameters = Arrays.copyOf(parameters, parameters.length);
         this.nameFormat = nameFormat;
     }
-    
+    /*
      public int summ(int a){
         return a+2;
-    }
+    }*/
 
     @Override
     public String getName() {
