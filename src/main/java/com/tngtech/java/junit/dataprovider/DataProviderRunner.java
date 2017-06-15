@@ -132,6 +132,8 @@ public class DataProviderRunner extends BlockJUnit4ClassRunner {
     TestClass getTestClassInt() {
         return getTestClass();
     }
+    
+   
 
   
     List<FrameworkMethod> generateExplodedTestMethodsFor(List<FrameworkMethod> testMethods) {
