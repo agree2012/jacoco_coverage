@@ -1,4 +1,4 @@
-package com.tngtech.java.junit.dataprovider.internal.placeholder;
+/*package com.tngtech.java.junit.dataprovider.internal.placeholder;
 
 public class SimpleClassNamePlaceholder extends BasePlaceholder {
     public SimpleClassNamePlaceholder() {
@@ -9,4 +9,4 @@ public class SimpleClassNamePlaceholder extends BasePlaceholder {
     protected String getReplacementFor(String placeholder) {
         return method.getDeclaringClass().getSimpleName();
     }
-}
+}*/
