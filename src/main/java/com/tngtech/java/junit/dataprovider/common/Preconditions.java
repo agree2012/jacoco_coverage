@@ -20,4 +20,10 @@ public class Preconditions {
             throw new IllegalArgumentException(String.format(errorMessageFormat, errorMessageArgs));
         }
     }
+    
+     public static void checkcheckArgument(boolean expression, String errorMessageFormat, Object... errorMessageArgs) {
+        if (!expression) {
+            throw new IllegalArgumentException(String.format(errorMessageFormat, errorMessageArgs));
+        }
+    }
 }
