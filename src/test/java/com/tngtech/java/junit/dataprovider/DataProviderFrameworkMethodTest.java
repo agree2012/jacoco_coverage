@@ -174,6 +174,22 @@ public class DataProviderFrameworkMethodTest extends BaseTest {
         // Then:
         assertThat(result).isSameAs(obj);
     }
+    
+    public void testanvokeExplosively() throws Throwable {
+        // Given:
+        final Object obj = new Object();
+        final Object[] parameters = new Object[] { obj };
+
+        Method method = getMethod("returnObjectArrayArrayMethod");
+
+        DataProviderFrameworkMethod underTest = new DataProviderFrameworkMethod(method, 30, parameters, "%p[30]");
+
+        // When:
+        Object result = underTest.anvokeExplosively(this, (Object) null);
+
+        // Then:
+        assertThat(result).isSameAs(obj);
+    }
 
     @Test
     public void testEqualsShouldReturnTrueForSameObject() {
