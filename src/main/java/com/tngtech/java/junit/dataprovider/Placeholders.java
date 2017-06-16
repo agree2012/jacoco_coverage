@@ -1,4 +1,4 @@
-/*package com.tngtech.java.junit.dataprovider;
+package com.tngtech.java.junit.dataprovider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,4 +34,4 @@ public class Placeholders {
         placeholders.add(new SimpleClassNamePlaceholder());
         placeholders.add(new SimpleMethodNamePlaceholder());
     }
-}*/
+}
