@@ -3,58 +3,13 @@ package com.tngtech.java.junit.dataprovider.internal.placeholder;
 import java.util.Arrays;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
-
-/**
- * This placeholder format the parameters of a dataprovider test as comma-separated {@link String} according to the
- * given index or range subscript (see {@link DataProvider#format()}. Furthermore the following parameter values are
- * treated specially:
- * <table summary="Special {@link String} treatment">
- * <tr>
- * <th>Parameter value</th>
- * <th>target {@link String}</th>
- * </tr>
- * <tr>
- * <td>null</td>
- * <td>&lt;null&gt;</td>
- * </tr>
- * <tr>
- * <td>&quot;&quot; (= empty string)</td>
- * <td>&lt;empty string&gt;</td>
- * </tr>
- * <tr>
- * <td>array (e.g. String[])</td>
- * <td>{@code "[" + formatPattern(array) + "]"}</td>
- * </tr>
- * <tr>
- * <td>other</td>
- * <td>{@link Object#toString()}</td>
- * </tr>
- * </table>
- */
+/*
 public class ParameterPlaceholder extends BasePlaceholder {
 
-    /**
-     * {@link String} representation of {@code null}
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     static final String STRING_NULL = "<null>";
 
-    /**
-     * {@link String} representation of {@code ""}
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     static final String STRING_EMPTY = "<empty string>";
 
-    /**
-     * {@link String} representation of an non-printable character
-     * <p>
-     * This field is package private (= visible) for testing.
-     * </p>
-     */
     static final String STRING_NON_PRINTABLE = "<np>";
 
 
@@ -83,13 +38,7 @@ public class ParameterPlaceholder extends BasePlaceholder {
         return formatAll(Arrays.copyOfRange(parameters, from, to));
     }
 
-    /**
-     * Formats the given parameters by retrieving it's {@link String} representation and separate it by comma (=
-     * {@code ,}).
-     *
-     * @param parameters to be formatted
-     * @return the {@link String} representation of the given {@link Object}{@code []}
-     */
+    
     protected String formatAll(Object[] parameters) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < parameters.length; i++) {
@@ -182,4 +131,4 @@ public class ParameterPlaceholder extends BasePlaceholder {
         }
         return result.toString();
     }
-}
+}*/
