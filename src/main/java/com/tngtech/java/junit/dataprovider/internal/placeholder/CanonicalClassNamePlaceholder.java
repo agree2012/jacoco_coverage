@@ -1,4 +1,4 @@
-package com.tngtech.java.junit.dataprovider.internal.placeholder;
+/*package com.tngtech.java.junit.dataprovider.internal.placeholder;
 
 public class CanonicalClassNamePlaceholder extends BasePlaceholder {
     public CanonicalClassNamePlaceholder() {
@@ -9,4 +9,4 @@ public class CanonicalClassNamePlaceholder extends BasePlaceholder {
     protected String getReplacementFor(String placeholder) {
         return method.getDeclaringClass().getCanonicalName();
     }
-}
+}*/
