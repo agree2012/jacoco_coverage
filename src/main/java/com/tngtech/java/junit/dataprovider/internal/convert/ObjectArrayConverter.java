@@ -31,7 +31,7 @@ public class ObjectArrayConverter extends AbstractObjectConverter<Object[]> {
         checkIfArgumentsMatchParameterTypes(result, parameterTypes);
         return result;
     }
-
+    /*
     private Object convertVarArgArgument(Object[] data, Class<?> varArgComponentType, int nonVarArgParameters) {
         if (data.length > 0) {
             Object date = data[data.length - 1];
@@ -46,5 +46,5 @@ public class ObjectArrayConverter extends AbstractObjectConverter<Object[]> {
             Array.set(varArgArray, idx - nonVarArgParameters, data[idx]);
         }
         return varArgArray;
-    }
+    }*/
 }
