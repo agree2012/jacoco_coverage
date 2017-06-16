@@ -31,7 +31,7 @@ public class Placeholders {
         placeholders.add(new CompleteMethodSignaturePlaceholder());
         placeholders.add(new IndexPlaceholder());
         placeholders.add(new ParameterPlaceholder());
-        placeholders.add(new SimpleClassNamePlaceholder());
-        placeholders.add(new SimpleMethodNamePlaceholder());
+        //placeholders.add(new SimpleClassNamePlaceholder());
+        //placeholders.add(new SimpleMethodNamePlaceholder());
     }
 }
