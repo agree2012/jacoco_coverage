@@ -64,4 +64,13 @@ public class Placeholders {
         placeholders.add(new SimpleClassNamePlaceholder());
         placeholders.add(new SimpleMethodNamePlaceholder());
     }
+     public static void reset() {
+        placeholders.clear();
+        placeholders.add(new CanonicalClassNamePlaceholder());
+        placeholders.add(new CompleteMethodSignaturePlaceholder());
+        placeholders.add(new IndexPlaceholder());
+        placeholders.add(new ParameterPlaceholder());
+        placeholders.add(new SimpleClassNamePlaceholder());
+        placeholders.add(new SimpleMethodNamePlaceholder());
+    }
 }
