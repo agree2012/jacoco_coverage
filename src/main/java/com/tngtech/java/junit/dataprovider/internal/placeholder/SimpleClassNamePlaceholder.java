@@ -10,3 +10,4 @@ public class SimpleClassNamePlaceholder extends BasePlaceholder {
         return method.getDeclaringClass().getSimpleName();
     }
 }
+
