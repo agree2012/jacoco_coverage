@@ -1,5 +1,4 @@
-package com.tngtech.java.junit.dataprovider.internal.placeholder;
-
+/*package com.tngtech.java.junit.dataprovider.internal.placeholder;
 public class SimpleMethodNamePlaceholder extends BasePlaceholder {
     public SimpleMethodNamePlaceholder() {
         super("%m");
@@ -10,3 +9,4 @@ public class SimpleMethodNamePlaceholder extends BasePlaceholder {
         return method.getName();
     }
 }
+*/
