@@ -8,8 +8,8 @@ import com.tngtech.java.junit.dataprovider.internal.placeholder.CanonicalClassNa
 import com.tngtech.java.junit.dataprovider.internal.placeholder.CompleteMethodSignaturePlaceholder;
 import com.tngtech.java.junit.dataprovider.internal.placeholder.IndexPlaceholder;
 import com.tngtech.java.junit.dataprovider.internal.placeholder.ParameterPlaceholder;
-import com.tngtech.java.junit.dataprovider.internal.placeholder.SimpleClassNamePlaceholder;
-import com.tngtech.java.junit.dataprovider.internal.placeholder.SimpleMethodNamePlaceholder;
+//import com.tngtech.java.junit.dataprovider.internal.placeholder.SimpleClassNamePlaceholder;
+//import com.tngtech.java.junit.dataprovider.internal.placeholder.SimpleMethodNamePlaceholder;
 
 
 public class Placeholders {
