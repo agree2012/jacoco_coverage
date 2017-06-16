@@ -75,12 +75,7 @@ public class DataProviderFrameworkMethod extends FrameworkMethod {
     public Object invokeExplosively(Object target, Object... params) throws Throwable {
         return super.invokeExplosively(target, parameters);
     }
-    
-    @Override
-    public Object anvokeExplosively(Object target, Object... params) throws Throwable {
-        return super.anvokeExplosively(target, parameters);
-    }
-
+  
     @Override
     public int hashCode() {
         final int prime = 31;
