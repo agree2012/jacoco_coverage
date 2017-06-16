@@ -1,5 +1,5 @@
-package com.tngtech.java.junit.dataprovider.internal.placeholder;
-/*
+/*package com.tngtech.java.junit.dataprovider.internal.placeholder;
+
 public class IndexPlaceholder extends BasePlaceholder {
     public IndexPlaceholder() {
         super("%i");
