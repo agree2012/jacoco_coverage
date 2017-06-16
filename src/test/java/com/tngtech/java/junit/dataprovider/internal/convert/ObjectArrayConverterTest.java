@@ -11,7 +11,7 @@ import com.tngtech.java.junit.dataprovider.BaseTest;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ObjectArrayConverterTest extends BaseTest {
-/*
+
     @InjectMocks
     private ObjectArrayConverter underTest;
 
@@ -170,4 +170,4 @@ public class ObjectArrayConverterTest extends BaseTest {
         // Then:
         assertThat(result).isEqualTo(new int[][] { { 1, 2 } });
     }
-}*/
+}
