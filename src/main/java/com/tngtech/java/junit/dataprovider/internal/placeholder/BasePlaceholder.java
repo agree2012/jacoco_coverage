@@ -1,4 +1,4 @@
-package com.tngtech.java.junit.dataprovider.internal.placeholder;
+/*package com.tngtech.java.junit.dataprovider.internal.placeholder;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.Placeholders;
 
-/*
+
 public abstract class BasePlaceholder {
 
     private final Pattern pattern;
